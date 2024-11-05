@@ -3,11 +3,9 @@ on:
   push:
     branches: [ main, master, develop, stage, release ]
   pull_request:
-    branches: [ main, master, develop, stage, release ]
-  workflow_dispatch:
-  
+    branches: [ main, master, develop, stage, release ]  
 jobs:
-  build:
+  polaris-scan:
     runs-on: [ ubuntu-latest ]
     steps:
       - name: Set up JDK 17
