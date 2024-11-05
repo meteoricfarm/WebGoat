@@ -1,0 +1,10 @@
+capture:
+  build:
+    build-command: ./mvnw package -Dmaven.test.skip=true
+    clean-command: ./mvnw clean
+  compiler-configuration:
+    cov-configure:
+      - [--java]
+  languages:
+    include:
+      - java
