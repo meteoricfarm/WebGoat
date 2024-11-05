@@ -1,9 +1,9 @@
 name: ci-polaris 
 on:
   push:
-    branches: [ main, master, develop, stage, release ]
+    branches: [ develop ]
   pull_request:
-    branches: [ main, master, develop, stage, release ]  
+    branches: [ develop ]  
 jobs:
   polaris-scan:
     runs-on: [ ubuntu-latest ]
