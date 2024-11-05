@@ -3,7 +3,13 @@ on:
   push:
     branches: [ develop ]
   pull_request:
-    branches: [ develop ]  
+    branches: [ develop ]
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to run the workflow on"
+        default: "develop"
+        required: true
 jobs:
   polaris-scan:
     runs-on: [ ubuntu-latest ]
